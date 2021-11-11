@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    height:300rem;
 `;
 ///////////////////Navigation///////////////////////
 export const NavSection = styled.section`
