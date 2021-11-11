@@ -7,10 +7,10 @@ export const Container = styled.section`
 export const NavSection = styled.section`
     background: url(${props => props.headerback});
     background-blend-mode: darken;
-    background-color:rgba(0,133,208,0.19371498599439774);
+    background-color:rgba(12,37,105,0.38323704481792717);
     background-size: cover;
     height:10vh;
-    border-bottom:solid 3px red;
+    border-bottom:solid 1.5px rgba(148,165,225,0.4805497198879552);
     display:flex;
     align-items:center;
     justify-content: space-around;
@@ -22,7 +22,6 @@ export const NavSection = styled.section`
     }
 `;
 export const NavBar = styled.div`
-    border:solid 3px;
     display:flex;
     align-items:center;
     justify-content: space-around;
@@ -32,9 +31,9 @@ export const NavBar = styled.div`
         display:flex;
         align-items:center;
         justify-content: space-around;
-        border:solid 3p;
     }
     button{
+        color:#fff;
         font-size:1rem;
         display: flex;
         align-items: center;
@@ -42,21 +41,22 @@ export const NavBar = styled.div`
         background:none;
         border-top:none;
         border-bottom:none;
-        border-left:solid 2px red;
-        border-right:solid 2px red;
+        border-left:solid 1px red;
+        border-right:solid 1px red;
         border-radius: 5px;
         &:hover {
-            transition: ease 0.75s;
-            box-shadow: inset 0 0 50px 0 rgba(193, 168, 101, 0.2329306722689075);
-            transition-delay: 1ms;
-            background: rgb(226, 225, 223);
-            background: radial-gradient(
-              circle,
-              rgba(226, 225, 223, 0.7259278711484594) 0%,
-              rgba(219, 194, 123, 0.6026785714285714) 52%,
-              rgba(241, 238, 203, 0) 100%
-            );
-            color: #eee;
+            filter: brightness(105%);
+            transition: ease 1s;
+            box-shadow: inset 0 0 50px 0 rgba(255,255,255,0.51416316526610644);
+            transition-delay: 175ms;
+            background: radial-gradient(circle, 
+                rgba(5,24,93,0.35898109243697474) 11%, 
+                rgba(10,48,158,0.12637429971988795) 51%, 
+                rgba(255,255,255,0.31416316526610644) 74%, 
+                rgba(228,229,233,0.07886904761904767) 100%);
+            color:black;
+            border-left:solid 1px black;
+            border-right:solid 1px black;
           }
     }
     div{
@@ -64,10 +64,10 @@ export const NavBar = styled.div`
         display:flex;
         justify-content:center;
         align-items:center;
-        border:solid 3px red;
+
     }
     figure{
-        border:solid 3px;
+       
         width:1rem;
         display:flex;
         margin:0;
@@ -76,7 +76,7 @@ export const NavBar = styled.div`
         width:100%;
     }
     p{
-        border:solid 3px;
+        color:#eee;
     }
 `;
 /////////////////////////////////////////
@@ -94,8 +94,7 @@ export const HeaderHub = styled.section`
         justify-content:center;
         margin:1rem;
     }
-    figure{
-        
+    figure{  
         width:25rem;
         margin:0;
     }
