@@ -35,12 +35,7 @@ export const MainNav = styled.section`
         margin-top:0.5rem;
         color:#fff;
         font-size:0.75rem;
-        background: linear-gradient(0deg, 
-            rgba(68,0,0,0.81444) 0%, 
-            rgba(182,0,0,1) 25%, 
-            rgba(255,0,0,1) 50%,
-            rgba(182,0,0,1) 75%, 
-            rgba(68,0,0,0.81444) 100%);
+        background:  rgba(182,0,0,1);
             border:none;
             border-radius:3px;
         width:7rem;
@@ -103,15 +98,91 @@ img{
 }
 `;
 //////////////////////////////////////////////
-/////////////////////////////////////////
+/////////////////FakeVideos///////////////////
 export const MainSeeMore = styled.section`
-    border:solid 3px;   
+    background: url(${props => props.smokeback});
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    box-shadow: inset 70px 0 300px 0  rgba(0,0,0.1);
+    border-top:solid 1px rgba(0,0,0.2);
+    height:25rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;  
     div{
-        border:solid 3px;
+        color:#fff;
+        font-size:1.5rem;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:6rem;
     }
-    span{
-        border:solid 3px red;
-    }
+`;
+export const SmokeBlend = styled.section`
+    box-shadow: inset -40px -20px 100px 0px rgba(0,0,0.1);
+    background: rgb(29,49,84);
+    background: linear-gradient(122deg, 
+        rgba(29,49,84,0.9999999) 0%, 
+        rgba(97,122,167,0.59) 25%, 
+        rgba(141,159,192,0.6) 29%, 
+        rgba(212,213,214,0.6) 35%,
+        rgba(186,186,186,0.5) 40%, 
+        rgba(190,190,190,0.4) 50%, 
+        rgba(246,239,239,0.4) 60%, 
+        rgba(230,216,216,0.5) 65%, 
+        rgba(221,136,136,0.5) 68%, 
+        rgba(199,56,56,0.4) 75%, 
+        rgba(130,28,28,0.999999) 100%);
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;  
+`;
+export const NavImg = styled.nav`
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:70%;
+`;
+
+
+export const FakeVideo1 = styled.figure`
+    box-shadow: 10px 0 30px 0  rgba(0,0,0.1);
+    background: url(${props => props.videoback1});
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    margin:0;
+    width:20rem;
+    height:10rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`;
+export const FakeVideo2 = styled.figure`
+    box-shadow: 10px 0 30px 0  rgba(0,0,0.1);
+    background: url(${props => props.videoback2});
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    margin:0;
+    width:20rem;
+    height:10rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+`;
+export const TrollButton = styled.span`
+    border:solid orange 2px;
+    width:3rem;
+    &:hover {
+        display:none;
+        }
     img{
         width:100%;
     }

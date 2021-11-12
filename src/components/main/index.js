@@ -40,6 +40,12 @@ export function Main(){
           promotionalpic2{
             url
           }
+          playbtn{
+            url
+          }
+          smokeback{
+            url
+          }
         }
       }
     }
@@ -61,7 +67,9 @@ export function Main(){
     imglearn2,
     mainiconlist,
     promotionalpic1,
-    promotionalpic2
+    promotionalpic2,
+    playbtn,
+    smokeback
 
   } = data.acdata.mains[0]
 
@@ -139,20 +147,24 @@ export function Main(){
           </S.MainList>
         </div>
       </S.MainInf>
-      <S.MainSeeMore>
-        <div>
+      <S.MainSeeMore smokeback={smokeback.url}>
+        <S.SmokeBlend>
           <div>
             <h2>{mainsubtitle}</h2>
           </div>
-          <div>
-            <figure>
-              <img src={promotionalpic1.url} alt="prom"/>
-            </figure>
-            <figure>
-              <img src={promotionalpic2.url} alt="prom"/>
-            </figure>
-          </div>
-        </div>
+          <S.NavImg>
+            <S.FakeVideo1 videoback1={promotionalpic1.url}>
+              <S.TrollButton>
+                <img src={playbtn.url} alt="button"/>
+              </S.TrollButton>
+            </S.FakeVideo1>
+            <S.FakeVideo2 videoback2={promotionalpic2.url}>
+              <S.TrollButton>
+                <img src={playbtn.url} alt="button"/>
+              </S.TrollButton>
+            </S.FakeVideo2>
+          </S.NavImg>
+        </S.SmokeBlend>
       </S.MainSeeMore>
     </S.Container>
   )
