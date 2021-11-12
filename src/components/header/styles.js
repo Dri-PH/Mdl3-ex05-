@@ -6,7 +6,7 @@ export const Container = styled.section`
 export const NavSection = styled.section`
     background: url(${props => props.headerback});
     background-blend-mode: darken;
-    background-color:rgba(12,37,105,0.38323704481792717);
+    background-color:rgba(255,255,255,0.5970763305322129);
     background-size: cover;
     height:10vh;
     border-bottom:solid 1.5px rgba(148,165,225,0.4805497198879552);
@@ -32,7 +32,7 @@ export const NavBar = styled.div`
         justify-content: space-around;
     }
     button{
-        color:#fff;
+        color:#000;
         font-size:1rem;
         display: flex;
         align-items: center;
@@ -51,9 +51,9 @@ export const NavBar = styled.div`
             background: radial-gradient(circle, 
                 rgba(5,24,93,0.35898109243697474) 11%, 
                 rgba(10,48,158,0.12637429971988795) 51%, 
-                rgba(255,255,255,0.31416316526610644) 74%, 
+                rgba(110,110,110,0.31416316526610644) 74%, 
                 rgba(228,229,233,0.07886904761904767) 100%);
-            color:black;
+            color:darkred;
             border-left:solid 1px black;
             border-right:solid 1px black;
           }
@@ -75,7 +75,7 @@ export const NavBar = styled.div`
         width:100%;
     }
     p{
-        color:#eee;
+        color:#000;
     }
 `;
 /////////////////////////////////////////

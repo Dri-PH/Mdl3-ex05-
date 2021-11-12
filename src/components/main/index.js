@@ -70,7 +70,6 @@ export function Main(){
     promotionalpic2,
     playbtn,
     smokeback
-
   } = data.acdata.mains[0]
 
   return(

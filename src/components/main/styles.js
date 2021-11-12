@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    height:300rem;
 `;
 /////////////////SectionList////////////////////
 export const MainNav = styled.section`
@@ -130,12 +129,12 @@ export const SmokeBlend = styled.section`
         rgba(141,159,192,0.6) 29%, 
         rgba(212,213,214,0.6) 35%,
         rgba(186,186,186,0.5) 40%, 
-        rgba(190,190,190,0.4) 50%, 
-        rgba(246,239,239,0.4) 60%, 
+        rgba(190,190,190,0.9) 50%, 
+        rgba(246,239,239,0.5) 60%, 
         rgba(230,216,216,0.5) 65%, 
         rgba(221,136,136,0.5) 68%, 
         rgba(199,56,56,0.4) 75%, 
-        rgba(130,28,28,0.999999) 100%);
+        rgba(130,28,28,0.9999999) 100%);
     height:100%;
     width:100%;
     display:flex;
@@ -178,7 +177,6 @@ export const FakeVideo2 = styled.figure`
     align-items:center;
 `;
 export const TrollButton = styled.span`
-    border:solid orange 2px;
     width:3rem;
     &:hover {
         display:none;
